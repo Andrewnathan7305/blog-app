@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/config/db";
 import { writeFile } from "fs/promises";
 import BlogModel from "@/lib/models/BlogModel";
-const fs = require('fs');
+import * as fs from 'fs';
 //const { NextResponse } = require("next/erver")
 const LoadDB = async () => {
     await connectDB();
